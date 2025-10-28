@@ -24,3 +24,6 @@ Any unauthorized use, copy, or reproduction of this name, logo, or identity is s
 This document serves as a permanent declaration of originality and authorship.  
 
 📄 [Download Ownership Proof (PDF)](https://shifterspine.github.io/ShifterSpine_Ownership_Proof.pdf)
+
+
+[ OtherSite ShifterSpine →](https://shifterspine.page.gd/)
