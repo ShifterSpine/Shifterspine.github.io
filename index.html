@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prithvi Raj Sanotiya - Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Gradient text for name */
+    .gradient-text {
+      background: linear-gradient(90deg, #00f0ff, #00d1ff, #7f00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Subtitle */
+    .sub-text {
+      color: #80ffe0; /* soft aqua */
+    }
+
+    /* Glass Button */
+    .glass-btn {
+      background: rgba(0, 150, 255, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(0, 150, 255, 0.4);
+      color: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+    .glass-btn:hover {
+      background: rgba(0, 150, 255, 0.35);
+      transform: translateY(-2px);
+    }
+
+    /* Glass Navbar */
+    .glass-navbar {
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+    }
+  </style>
+</head>
+<body class="bg-black text-white flex flex-col min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="glass-navbar fixed w-full top-0 z-50 px-6 md:px-20 py-4 flex items-center justify-between">
+    <div class="text-2xl font-bold gradient-text">
+      Prithvi Raj
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="hidden md:flex space-x-8 text-white font-semibold">
+      <a href="#" class="hover:text-cyan-400 transition">Home</a>
+      <a href="https://ShifterSpine.github.io/README.md" class="hover:text-cyan-400 transition">About</a>
+      <a href="#" class="hover:text-cyan-400 transition">Projects</a>
+      <a href="#" class="hover:text-cyan-400 transition">Contact</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="focus:outline-none">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+             xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-black bg-opacity-90 flex flex-col items-center space-y-4 py-4 md:hidden z-40">
+    <a href="#" class="text-white text-lg hover:text-cyan-400 transition">Home</a>
+    <a href="https://ShifterSpine.github.io/README.md" class="text-white text-lg hover:text-cyan-400 transition">About</a>
+    <a href="#" class="text-white text-lg hover:text-cyan-400 transition">Projects</a>
+    <a href="#" class="text-white text-lg hover:text-cyan-400 transition">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex flex-col md:flex-row items-center justify-center md:justify-between w-full px-6 md:px-20 mt-28">
+
+    <!-- Text Section -->
+    <div class="text-center md:text-left md:flex-1 mb-6 md:mb-0">
+      <h1 class="text-3xl md:text-5xl font-bold gradient-text">
+        I’m Prithvi Raj Sanotiya
+      </h1>
+      <p class="mt-4 text-lg md:text-xl sub-text">
+        A Full Stack Web Developer
+      </p>
+
+      <!-- Buttons -->
+      <div class="mt-6 flex justify-center md:justify-start space-x-4">
+        <!-- About Me -->
+        <a href="https://ShifterSpine.github.io/README.md" class="glass-btn px-6 py-3 rounded-full font-semibold text-white">
+          About Me
+        </a>
+
+        <!-- GitHub Button -->
+        <a href="https://github.com/ShifterSpine" target="_blank" class="glass-btn px-4 py-3 rounded-full flex items-center justify-center space-x-2 font-semibold text-white">
+          <i class="fab fa-github text-lg"></i>
+          <span class="hidden md:inline">GitHub</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="md:flex-1 flex justify-center md:justify-end">
+      <img 
+        src="https://files.catbox.moe/701dgn.png" 
+        alt="Profile Image" 
+        class="max-w-full h-auto object-contain"
+      >
+    </div>
+
+  </div>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+                                                                                    </html>
